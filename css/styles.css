@@ -263,11 +263,16 @@ main {
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 200px 300px;
   background-size: cover;
 
   display: flex;
   text-align: center;
   margin: 0 auto;
+}
+@media (min-resolution: 192dpi) {
+  .hero-section {
+  }
 }
 @media screen and (min-width: 768px) {
   .hero-section {
@@ -498,6 +503,8 @@ main {
 }
 .bs-el {
   width: calc((100% - 48px) / 3);
+  display: block;
+  max-width: 100%;
 }
 
 /* Our Team  */
@@ -557,7 +564,7 @@ main {
 
 .person-block {
   display: block;
-  width: calc((100% - 72px) / 4);
+  max-width: 100%;
   border-radius: 0px 0px 4px 4px;
   background: #fff;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
